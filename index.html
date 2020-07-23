@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/img/rock.png">
+    <link rel="stylesheet" href="..//assets/styles/style.css">
+    <title>Rock paper scissors</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Rock paper scissors</h1>
+        </header>
+        <section>
+            <div class="players">
+                <div>
+                    <h2>Player 1</h2>
+                    <p id="player">0</p>
+                </div>
+                <img src="../assets/img/vs.png" alt="versus"/>
+                <div>
+                    <h2>CPU</h2>
+                    <p id="cpu">0</p>
+                </div>
+            </div>
+
+            <div class="options">
+                <a class="rock" onclick="play(0)"></a>
+                <a class="paper" onclick="play(1)"></a>
+                <a class="scissors" onclick="play(2)"></a>
+            </div>
+            <button onclick="resetGame()">RESET GAME</button>
+        </section>
+    </main>
+    <div class="overlay">
+        <div>
+            <p>CPU CHOOSE</p>
+            <div>
+                <img/>
+            </div>
+            <p id="result">YOU WIN!!!</p>
+            <a onclick="document.getElementsByClassName('overlay')[0].style.display = 'none'">CONTINUE</a>
+        </div>
+    </div>
+    <script src="../assets/js/index.js"></script>
+</body>
+</html>
